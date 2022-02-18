@@ -1,0 +1,37 @@
+{
+  "name": "@uniformdev/optimize-starter-sanity-studio",
+  "version": "14.1.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build out -y",
+    "ci:build": "sanity build out -y --source-maps"
+  },
+  "dependencies": {
+    "@babel/core": "7.17.5",
+    "@sanity/base": "2.27.0",
+    "@sanity/color": "2.1.8",
+    "@sanity/components": "2.14.0",
+    "@sanity/core": "2.27.0",
+    "@sanity/data-aspects": "2.27.0",
+    "@sanity/default-layout": "2.27.0",
+    "@sanity/default-login": "2.27.0",
+    "@sanity/desk-tool": "2.27.0",
+    "@sanity/form-builder": "2.27.0",
+    "@sanity/vision": "2.27.0",
+    "@uniformdev/sanity-plugin-uniform-optimize": "canary",
+    "caniuse-lite": "1.0.30001312",
+    "prop-types": "15.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-is": "17.0.2",
+    "styled-components": "5.3.3",
+    "webpack": "5.69.1"
+  },
+  "devDependencies": {
+    "@sanity/cli": "2.27.0",
+    "@sanity/types": "2.27.0"
+  }
+}
+

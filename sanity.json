@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "project": {
+    "name": "UniformConf"
+  },
+  "api": {
+    "projectId": "thiscannotbeemptyevenwhenusingenvvarsotherwisesanityisnothappy",
+    "dataset": "mustbe20charsorless"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@uniformdev/sanity-plugin-uniform-optimize"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["@sanity/vision"]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}

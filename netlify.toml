@@ -1,0 +1,16 @@
+[build]
+  command = 'npm run ci:build'
+  publish = 'out'
+
+[template.environment]
+  SANITY_STUDIO_API_PROJECT_ID='Sanity Project ID'
+  SANITY_STUDIO_API_DATASET='Sanity Dataset Name'
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+
+
+[build.environment]
+  UNIFORM_CLI_BASE_URL='https://canary.uniform.app'

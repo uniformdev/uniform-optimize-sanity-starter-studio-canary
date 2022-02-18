@@ -1,0 +1,18 @@
+{
+  "github": {
+    "silent": true
+  },
+  "builds": [
+    {
+      "use": "@vercel/static-build",
+      "src": "package.json",
+      "config": {
+        "zeroConfig": true,
+        "framework": null,
+        "buildCommand": "yarn ci:build",
+        "outputDirectory": "out"
+      }
+    }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
